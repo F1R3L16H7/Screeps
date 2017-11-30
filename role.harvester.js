@@ -10,11 +10,11 @@ var roleHarvester = {
             flag = null;
 	    if(creep.memory.building && creep.carry.energy == 0) {
             creep.memory.building = false;
-            //creep.say('🔄 harvest');
+            //creep.say('ð harvest');
 	    }
 	    if(!creep.memory.building && creep.carry.energy == creep.carryCapacity) {
 	        creep.memory.building = true;
-	        //creep.say('🚧 build');
+	        //creep.say('ð§ build');
 	    }
         if(!creep.memory.building) {
             if (flag && creep.room.controller && creep.room.controller.my)
